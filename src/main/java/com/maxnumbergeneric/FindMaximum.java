@@ -17,4 +17,17 @@ public class FindMaximum {
         }
         return max;
     }
+    public Float findMaximumFLoat(Float i,Float j,Float k) // method to check maximum  float Number
+    {
+        float max=i;
+        if(j.compareTo(max)>0)
+        {
+            max=j;
+        }
+        if(k.compareTo(max)>0)
+        {
+            max=k;
+        }
+        return max;
+    }
 }
