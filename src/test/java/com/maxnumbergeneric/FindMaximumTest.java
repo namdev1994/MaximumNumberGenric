@@ -24,7 +24,21 @@ public class FindMaximumTest {
         FindMaximum findMaximum = new FindMaximum();
         float maximumFLoat = findMaximum.findMaximumFLoat(314.1f,212.1f,333.2f);
         Assertions.assertEquals(333.2f,maximumFLoat);
+    }
+    @Test
+    public void maximumStringTest() //test case for String check
+    {
+        FindMaximum findMaximum = new FindMaximum();
+        String maximumString = findMaximum.findMaximumString("Namdev","Mahadev","Sandip");
+        Assertions.assertEquals("Sandip",maximumString);
 
+    }
+    @Test
+    public void maximumStringNegativeTest()
+    {
+        FindMaximum findMaximum = new FindMaximum();
+        String maximumString = findMaximum.findMaximumString("Namdev","Mahadev","Sandip");
+        Assertions.assertEquals("Namdev",maximumString);
     }
 
 }
