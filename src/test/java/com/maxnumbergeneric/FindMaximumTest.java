@@ -5,67 +5,58 @@ import org.junit.jupiter.api.Test;
 
 public class FindMaximumTest {
     @Test
-    public void firstNumberIntegerTest()// positive test for maximum number
+    public void firstNumberIntegerTest()// positive test for maximum first number
     {
-        FindMaximum findMaximum = new FindMaximum();
-        Integer maximum = findMaximum.findMaximum(12, 9, 4);//pass the method parammetr to check
+        Integer maximum = (Integer)new FindMaximum(12, 9, 4).findMaximum();//pass the method parammetr to check
         Assertions.assertEquals(12,maximum);
     }
     @Test
-    public void secondNumberIntegerTest()// positive test for maximum number
+    public void secondNumberIntegerTest()//  test for maximum number at second
     {
-        FindMaximum findMaximum = new FindMaximum();
-        Integer maximum = findMaximum.findMaximum(12, 14, 4);//pass the method parammetr to check
+        Integer maximum =(Integer) new FindMaximum(12, 14, 4).findMaximum();//pass the method parammetr to check
         Assertions.assertEquals(14,maximum);
     }
     @Test
-    public void thirdNumberIntegerTest()//negative test
+    public void thirdNumberIntegerTest()// test for maximum number at third
     {
-        FindMaximum findMaximum = new FindMaximum();
-        Integer maximum = findMaximum.findMaximum(12, 9, 17);
+        Integer maximum =(Integer) new FindMaximum(12, 9, 17).findMaximum();
         Assertions.assertEquals(17,maximum);
     }
     @Test
     public void maximumFirstNumberFloat() //float check test
     {
-        FindMaximum findMaximum = new FindMaximum();
-        float maximumFLoat = findMaximum.findMaximum(334.1f,212.1f,333.2f);
+        float maximumFLoat = (Float)new FindMaximum(334.1f,212.1f,333.2f).findMaximum();
         Assertions.assertEquals(334.1f,maximumFLoat);
     }
     @Test
     public void maximumSecondNumberFloat() //float check test
     {
-        FindMaximum findMaximum = new FindMaximum();
-        float maximumFLoat = findMaximum.findMaximum(314.1f,444.1f,333.2f);
+        float maximumFLoat = (Float) new FindMaximum(314.1f,444.1f,333.2f).findMaximum();
         Assertions.assertEquals(444.1f,maximumFLoat);
     }
     @Test
     public void maximumThirdNumberFloat() //float check test
     {
-        FindMaximum findMaximum = new FindMaximum();
-        float maximumFLoat = findMaximum.findMaximum(314.1f,212.1f,336.2f);
+        float maximumFLoat = (Float)new FindMaximum(314.1f,212.1f,336.2f).findMaximum();
         Assertions.assertEquals(336.2f,maximumFLoat);
     }
     @Test
-    public void maximumFirstStringTest() //test case for String check
+    public void maximumFirstStringTest() //test case for String  maximum
     {
-        FindMaximum findMaximum = new FindMaximum();
-        String maximumString = findMaximum.findMaximum("Watermelon","Banana","Apple");
+        String maximumString = (String)new FindMaximum("Watermelon","Banana","Apple").findMaximum();
         Assertions.assertEquals("Watermelon",maximumString);
 
     }
     @Test
-    public void maximumSecondStringTest()
+    public void maximumSecondStringTest() // test case for String  maximum
     {
-        FindMaximum findMaximum = new FindMaximum();
-        String maximumString = findMaximum.findMaximum("Banana","Watermelon","Apple");
+        String maximumString=(String) new FindMaximum("Banana","Watermelon","Apple").findMaximum();
         Assertions.assertEquals("Watermelon",maximumString);
     }
     @Test
-    public void maximumThirdStringTest()
+    public void maximumThirdStringTest() // test case for String  maximum
     {
-        FindMaximum findMaximum = new FindMaximum();
-        String maximumString = findMaximum.findMaximum("Banana","Apple","Watermelon");
+        String maximumString =(String) new FindMaximum("Banana","Apple","Watermelon").findMaximum();
         Assertions.assertEquals("Watermelon",maximumString);
     }
 
