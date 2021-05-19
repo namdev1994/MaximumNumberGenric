@@ -36,6 +36,11 @@ public class FindMaximum<S extends Comparable<S>>  //generic class
         if (m.compareTo(max) > 0) {
             max = m;
         }
+        dislpay(max);
         return max;
+    }
+    public static <S> void dislpay(S max) // display the maximum filed
+    {
+        System.out.println("Maximum is : "+max);
     }
 }

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.maxnumbergeneric.FindMaximumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-19T11:45:20" hostname="LAPTOP-LN4L4KQQ" time="0.047">
+<testsuite name="com.maxnumbergeneric.FindMaximumTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-19T11:57:15" hostname="LAPTOP-LN4L4KQQ" time="0.037">
   <properties/>
-  <testcase name="maximumThirdStringTest()" classname="com.maxnumbergeneric.FindMaximumTest" time="0.047"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="maximumThirdStringTest()" classname="com.maxnumbergeneric.FindMaximumTest" time="0.037"/>
+  <system-out><![CDATA[Maximum is : Watermelon
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
